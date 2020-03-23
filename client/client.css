@@ -1,0 +1,46 @@
+body {
+    font: 9pt sans-serif;
+    margin: 0;
+}
+#messageBox {
+    width: -webkit-fill-available;
+    position: absolute;
+    padding: 4px;
+    bottom: 0;
+    outline: 0;
+    border: 0;
+}
+#conversation {
+    margin: 0;
+    padding: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: content-box;
+}
+#conversation > div.name {
+    margin-top: 12px;
+    padding-left: 8px;
+    font-size: smaller;
+    color: grey;
+}
+#conversation > div.message {
+    margin: 5px 0;
+}
+#conversation > div.message > div {
+    background: lightgrey;
+    display: inline-block;
+    border-radius: 9px;
+    padding: 4px 8px;
+    max-width: 75%;
+}
+#conversation > div.message.origin {
+    text-align: right;
+}
+#conversation > div.message.origin > div {
+    background: rgb(50, 132, 245);
+    color: white;
+}
